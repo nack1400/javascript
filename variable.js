@@ -27,5 +27,23 @@ var age;
 const num = 3; //바꿀 수 없음
 
 //4. Variable types
-//값을 자동적으로 형지정 후 저장
 
+//string
+const char = 'c';
+const brendan = 'brendan';
+console.log(`value: ${char}, type: ${typeof char}`);
+console.log(char);
+
+//symbol
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id');
+console.log(symbol1 == symbol2);
+console.log(symbol1 === symbol2);
+const gsymbol1 = Symbol.for('id');
+const gsymbol2 = Symbol.for('id');
+console.log(gsymbol1 == gsymbol2);
+console.log(gsymbol1 === gsymbol2);
+
+
+//5.Dynamic typing: dynamically typed language
+//자바스크립트는 값을 자동적으로 형지정 후 저장
