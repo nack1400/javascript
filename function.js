@@ -20,6 +20,8 @@ function calculate(command, a, b){
       return a*b;
     case 'rem':
       return a%b;
+    default:
+      throw Error('unknown command!');
   }
 }
 
