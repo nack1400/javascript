@@ -65,24 +65,24 @@ const students = [
 
 // Q7. make an array containing only the students' scores
 // result should be: [45, 80, 90, 66, 88]
-{
+{  //배열안의 요소를 다른 방식의 데이터를 만들고 싶을때 사용
   const result = students.map((student) => student.score);
   console.log(7);
   console.log(result);
 }
 
 // Q8. check if there is a student with the score lower than 50
-{
+{ //배열에 하나라도 조건에 맞는 요소가 있는지
   const result = students.some((student) => student.score < 50);
   console.log(8);
   console.log(result);
-
+  //배열에 모든 요소가 조건에 맞는지
   const result2 = !students.every((student) => student.score >= 50);
   console.log(result2);
 }
 
 // Q9. compute students' average score
-{
+{ //원하는 시작점부터 모든 배열을 돌면서 값을 누적
   const result = students.reduce((prev, curr) => prev + curr.score, 0);
   console.log(9);
   console.log(result / students.length);
